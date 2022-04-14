@@ -1,0 +1,20 @@
+{
+  "entry": {
+    "main": [
+      "./scripts/main.js",
+      "./styles/main.scss"
+    ],
+    "customizer": [
+      "./scripts/customizer.js"
+    ]
+  },
+  "publicPath": "/test-wolf/wp-content/themes/mr-wolf",
+  "devUrl": "http://localhost:8888/test-wolf",
+  "proxyUrl": "http://localhost:3000",
+  "cacheBusting": "[name]_[contenthash]",
+  "watch": [
+    "app/**/*.php",
+    "config/**/*.php",
+    "resources/views/**/*.php"
+  ]
+}
