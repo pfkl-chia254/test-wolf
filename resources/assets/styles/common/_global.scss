@@ -1,1 +1,8 @@
 // Global styles are set in the Tailwind config using a plugin
+body:not(.wp-admin):not(#tinymce) {
+  @apply bg-merino font-poppins text-base;
+}
+
+.wrap {
+  border: 2px solid greenyellow;
+}

@@ -16,13 +16,18 @@
 const globalStyles = ({ addBase, config }) => {
   addBase({
     a: {
-      color: config('theme.textColor.primary'),
+      color: config('theme.colors.black'),
       textDecoration: 'none',
-      borderBottom: '1px solid transparent',
+      // borderBottom: '1px solid transparent',
       transition: '0.2s ease',
+      // opacity: '0.4',
     },
     'a:hover': {
-      borderColor: config('theme.borderColor.primary'),
+      // borderColor: config('theme.borderColor.primary'),
+      // opacity: '1'
+    },
+    'a:active': {
+      // opacity: '1'
     },
     p: {
       marginBottom: config('theme.margin.3'),
@@ -67,6 +72,32 @@ module.exports = {
     container: {
       center: true,
       padding: '1rem',
+    },
+    minHeight: {
+      '50': '50px'
+    },
+    extend: {
+      fontFamily: {
+        poppins: ['Poppins', 'sans-serif'],
+      },
+      textColor: ['visited', 'active'],
+      colors: {
+        merino: '#F9F6EE',
+        satinLinen: '#E2DED1',
+        tradewind: '#51ACAF',
+      },
+      // fontSize: {
+      //   xs: ['0.75rem', 1.5], // 12px/18px
+      //   sm: ['0.875rem', 1.7], // 14px/24px
+      //   base: ['1rem', 1.5], // 16px/24px
+      //   lg: ['1.25rem', 1.5], // 20px/30px
+      //   xl: ['1.375rem', 1.5], // 22px/33px
+      //   '2xl': ['1.5rem', 1.5], // 24px/36px
+      //   '3xl': ['2rem', 1.5], // 32px/48px
+      //   '4xl': ['2.5rem', 1], // 40px/40px
+      //   '5xl': ['3rem', 1], // 48px/48px
+      //   '6xl': ['3.5rem', 1], // 56px/56px
+      // },
     },
   },
   variants: {
